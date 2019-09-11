@@ -268,7 +268,7 @@ public final class PolylineUtils {
       }
     }
 
-    if (!prevPoint.equals(point)) {
+    if (prevPoint != null && !prevPoint.equals(point)) {
       newPoints.add(point);
     }
     return newPoints;
